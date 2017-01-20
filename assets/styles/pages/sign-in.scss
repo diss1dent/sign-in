@@ -1,0 +1,72 @@
+.sign-in-page {
+  //background-image: radial-gradient(circle at 50% 13%, $c-teal-dasty, $c-teal);
+  background: linear-gradient(97deg, $c-teal-dasty 0%,$c-teal-dark 50%, $c-orange 50.05%, $c-orange 100%);
+
+  .content-wrapper {
+    max-width: 680px;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-50%);
+
+    .sidebar-image {
+      max-width: 300px;
+    }
+
+    .content {
+      padding: 40px 36px 0 0;
+
+      .sign-in-wrapper {
+        padding-bottom: 15px;
+        background-color: $c-white;
+        box-shadow: 0 6px 21px 0 rgba(0,0,0,0.2);
+        max-width: 213px;
+        color: $c-gray;
+        border-radius: 4px;
+        overflow: hidden;
+        @include rem-fallback(font-size, 0.5);
+      }
+
+      .create-account {
+        margin-top: 25px;
+        text-align: center;
+        @include rem-fallback(font-size, 0.75);
+      }
+    }
+  }
+}
+
+.sign-in-wrapper {
+  .sign-in-header {
+    padding: 17px;
+    box-shadow: 0 0 13px 0 $c-brown;
+
+    a, a:active, a:visited, a:hover {
+      color: $c-gray;
+    }
+
+    h2 {
+      color: $c-orange;
+      text-transform: uppercase;
+      letter-spacing: 0.9px;
+      @include rem-fallback(font-size, 0.5);
+    }
+  }
+
+  #sign-in-form {
+
+    fieldset {
+      border: none;
+      padding: 20px 12px;
+    }
+
+    .sign-in-actions {
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

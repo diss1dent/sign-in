@@ -1,0 +1,31 @@
+/* Colors */
+
+$c-black:#454749;
+$c-white: #fff;
+$c-orange: #ffba33;
+$c-red: #FF4933;
+$c-teal:#719f9e;
+$c-teal-dasty:#467d7d;
+$c-teal-dark:#1a535c;
+$c-brown:#ece0c8;
+$c-gray:#bdc3c6;
+$c-gray-lighter:#fcfcfd;
+$c-gray-light:#ecf0f3;
+/* fonts */
+
+$base-font-family: -apple-system, BlinkMacSystemFont,
+"Segoe UI", "Roboto", "Oxygen",
+"Ubuntu", "Cantarell", "Fira Sans",
+"Droid Sans", "Helvetica Neue", sans-serif;
+$html-font-size: 16;
+$base-font-size: 12px;
+$base-line-height: normal;
+$f-awesom: "FontAwesome";
+
+/* grid */
+
+$page-width:800px;
+$page-height:580px;
+
+/* other */
+$transition-all: all 0.3s ease;

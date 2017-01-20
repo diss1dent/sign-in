@@ -1,0 +1,45 @@
+.sign-in-states-page {
+  background-image: radial-gradient(circle at 50% 48%, #3c818c, #1a535c);
+
+  .container {
+    text-align: center;
+
+    .content-wrapper {
+      position: absolute;
+      top: 45%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.informer {
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  display: table;
+  margin: 0 auto;
+  background-color: $c-white;
+  margin-bottom: 30px;
+
+  .informer-sign {
+    display: table-cell;
+    vertical-align: middle;
+
+    i {
+      @include rem-fallback(font-size, 2.2);
+    }
+  }
+}
+.informer-success {
+  i {
+    color: $c-orange;
+  }
+}
+.informer-error {
+  i {
+    color: $c-red;
+  }
+}

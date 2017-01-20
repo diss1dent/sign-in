@@ -1,0 +1,44 @@
+.btn {
+    background-color: $c-teal-dark;
+    border: none;
+    display: inline-block;
+    outline: none;
+    padding: 12px;
+    text-align: center;
+    border-radius: 3px;
+    color: $c-white;
+    @include rem-fallback(font-size, 0.625);
+    cursor: pointer;
+    text-transform: uppercase;
+    min-width: 130px;
+}
+
+input[type=text], input[type=password] {
+    color: #454749;
+    outline: none;
+    width: 98%;
+    height: 30px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: $c-gray-lighter;
+    border: solid 0.6px $c-gray-light;
+    margin-bottom: 8px;
+    @include rem-fallback(font-size, 0.5625);
+}
+
+input[type=password] + label{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+
+    &:after {
+        content:"\f070";
+        font-family: $f-awesom;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        color:$c-gray;
+        transform: translateY(-58%);
+        @include rem-fallback(font-size, 0.75);
+    }
+}
